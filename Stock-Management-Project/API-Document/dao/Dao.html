@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dao</title>
+</head>
+<body>
+    <h2>Dao(static)</h2>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>增</p>
+                <p>public static int insertBond(Connection con, Bond bond)</p>
+                <p>删</p>
+                <p>public static int deleteBond(Connection con, Bond bond)</p>
+                <p>public static int deleteBond(Connection con, String info)</p>
+                <p>public static int deleteBondByCode(Connection con, String rawCode)</p>
+                <p>public static int deleteBondByName(Connection con, String name)</p>
+                <p>查</p>
+                <p>public static ArrayList<String> queryCodeList(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByCode(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByPrice(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByPriceDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByHold(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByHoldDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByRelative(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByRelativeDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByAbsolute(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByAbsoluteDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryDefault(Connection con)</p>
+                <p>public static int queryHoldNum(Connection con, String info)</p>
+                <p>public static Bond queryBond(Connection con, String info)</p>
+                <p>public static Bond queryByCode(Connection con, String rawCode)</p>
+                <p>public static Bond queryByName(Connection con, String name)</p>
+                <p>改</p>
+                <p>public static int updateAllBond(String user)</p>
+                <p>public static int updateOneBond(String user, String perfectCode)</p>
+                <p>public static int updateBondByCode(Connection con, String code)</p>
+                <p>public static int updateBondByCode(Connection con, String code , int holdNum)</p>
+                <p>public static int updateBond(Connection con, Bond bond)</p>
+                <p>public static int updateMinChart</p>
+                <p>public static int updateDailyChart(String user)</p>
+            </div>
+</body>
+</html>

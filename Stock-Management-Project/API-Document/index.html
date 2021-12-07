@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p class="title">Stock-Management-API-Document</p>
+    <hr>
+
+    <div name="module" class="package">
+        <h1>module</h1>
+        <div name="Bond" class="class">
+            <a href="./module/Bond.html"><h2>Bond</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+                <p>code</p>  
+                <p>name</p>      
+                <p>todayOpen</p>
+                <p>yesterdayClose</p>
+                <p>nowPrice</p>
+                <p>max</p>
+                <p>min</p>
+                <p>tradingNum</p>
+                <p>tradingVolume</p>
+                <p>holeNum</p>
+                <p>relativeChange</p>
+                <p>absoluteChange</p>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>constructor</p>
+                <p>getter</p>
+                <p>setter</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div name="dao" class="package">
+        <h1>dao</h1>
+        <div name="Dao" class="class">
+            <a href="./dao/Dao.html"><h2>Dao(static)</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>增</p>
+                <p>public static int insertBond(Connection con, Bond bond)</p>
+                <p>删</p>
+                <p>public static int deleteBond(Connection con, Bond bond)</p>
+                <p>public static int deleteBond(Connection con, String info)</p>
+                <p>public static int deleteBondByCode(Connection con, String rawCode)</p>
+                <p>public static int deleteBondByName(Connection con, String name)</p>
+                <p>查</p>
+                <p>public static ArrayList<String> queryCodeList(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByCode(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByPrice(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByPriceDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByHold(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByHoldDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByRelative(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByRelativeDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByAbsolute(Connection con)</p>
+                <p>public static ArrayList<Bond> queryAllByAbsoluteDesc(Connection con)</p>
+                <p>public static ArrayList<Bond> queryDefault(Connection con)</p>
+                <p>public static int queryHoldNum(Connection con, String info)</p>
+                <p>public static Bond queryBond(Connection con, String info)</p>
+                <p>public static Bond queryByCode(Connection con, String rawCode)</p>
+                <p>public static Bond queryByName(Connection con, String name)</p>
+                <p>改</p>
+                <p>public static int updateAllBond(String user)</p>
+                <p>public static int updateOneBond(String user, String perfectCode)</p>
+                <p>public static int updateBondByCode(Connection con, String code)</p>
+                <p>public static int updateBondByCode(Connection con, String code , int holdNum)</p>
+                <p>public static int updateBond(Connection con, Bond bond)</p>
+                <p>public static int updateMinChart</p>
+                <p>public static int updateDailyChart(String user)</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div name="util" class="package">
+        <h1>util</h1>
+        <div name="BondUtil" class="class">
+            <a href="./util/BondUtil.html"><h2>BondUtil</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>public static Bond constructBondFromHtmlAndHoldNum(String html, int holdNum)</p>
+                <p>public static Bond constructBondFromRs(ResultSet rs) throws SQLException</p>
+                <p>public static void printBond(Bond bond)</p>
+            </div>
+        </div>
+        <div name="DBUtil" class="class">
+            <a href="./util/DBUtil.html"><h2>DBUtil</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>public static Connection getCon(String dbName)</p>
+                <p>public static Connection createDB(String dbName)</p>
+                <p>public static int closeCon(Connection con)</p>
+                <p>public static int addUser(String userName, String passCode)</p>
+                <p>public static int matchUser(String userName, String passCode)</p>
+                <p>public static int haveUser(String userName)</p>
+                <p>public static int haveCode(Connection con,String rawCode)</p>
+                <p>public static int haveName(Connection con,String name)</p>
+                <p>public static int valueInTableInColumn(Connection con, String value, String table, String column)</p>
+                <p>public static int valueInTableInColumn(Connection con, int value, String table, String column)</p>
+                <p>public static int valueInTableInColumn(Connection con, double value, String table, String column)</p>
+            </div>
+        </div>
+        <div name="StringUtil" class="class">
+            <a href="./util/StringUtil.html"><h2>StringUtil</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>public static String getDBName(String rawName)</p>
+                <p>public static String getCode(String rawCode)</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div name="web" class="package">
+        <h1>web</h1>
+        <div name="Scraper" class="class">
+            <a href="./web/Screaper.html"><h2>Scraper</h2></a>
+            <div class="variable">
+                <h3>variable</h3>
+            </div>
+            <div class="method">
+                <h3>method</h3>
+                <p>public static int requestZzzzByCodeAndUser()</p>
+                <p>public static int requestMinByCodeAndUser(String rawCode, String user)</p>
+                <p>public static int requestDailyByCodeAndUser(String rawCode, String user)</p>
+                <p>public static int requestMacdByCodeAndUser(String rawCode, String user)</p>
+                <p>public static int download(String url, String path, String fileName)</p>
+                <p>public static Bond requestBondByCodeAndHoldNum(String rawCode, int holdNum)</p>
+                <p>public static String getHtmlByCode(String rawCode)</p>
+                <p>public static String getHtml(String url,String encoding)</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+</body>
+</html>
